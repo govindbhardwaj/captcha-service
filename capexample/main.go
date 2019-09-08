@@ -7,11 +7,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/dchest/captcha"
 	"io"
 	"log"
 	"net/http"
 	"text/template"
+
+	captcha "bitbucket.org/kumargovind88/cape"
 )
 
 var formTemplate = template.Must(template.New("example").Parse(formTemplateSrc))
